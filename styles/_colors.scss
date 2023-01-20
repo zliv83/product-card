@@ -1,0 +1,99 @@
+// Palette
+$primary-100: #f7e0ef;
+$primary-200: #efc2e4;
+$primary-300: #d095c7;
+$primary-400: #a2689e;
+$primary-500: #633564;
+$primary-600: #502656;
+$primary-700: #3f1a48;
+$primary-800: #2e103a;
+$primary-900: #220a30;
+$secondary-100: #fef8dd;
+$secondary-200: #fdefbb;
+$secondary-300: #f9e198;
+$secondary-400: #f4d27d;
+$secondary-500: #edbd54;
+$secondary-600: #cb9a3d;
+$secondary-700: #aa7a2a;
+$secondary-800: #895c1a;
+$secondary-900: #714610;
+$darkAccent-100: #e7f1f9;
+$darkAccent-200: #d0e2f3;
+$darkAccent-300: #adc2db;
+$darkAccent-400: #879cb8;
+$darkAccent-500: #596c8a;
+$darkAccent-600: #415376;
+$darkAccent-700: #2c3d63;
+$darkAccent-800: #1c2a50;
+$darkAccent-900: #111c42;
+$darkShade-100: #f1f5f0;
+$darkShade-200: #e2ece2;
+$darkShade-300: #bbc8bb;
+$darkShade-400: #859187;
+$darkShade-500: #414943;
+$darkShade-600: #2f3e34;
+$darkShade-700: #203429;
+$darkShade-800: #142a20;
+$darkShade-900: #0c231a;
+$lightShade-100: #fcfcf7;
+$lightShade-200: #faf9f0;
+$lightShade-300: #f1f0e2;
+$lightShade-400: #e3e1d2;
+$lightShade-500: #d1cfbc;
+$lightShade-600: #b3af89;
+$lightShade-700: #96905e;
+$lightShade-800: #79713b;
+$lightShade-900: #645b24;
+
+// Theme
+$primary: (
+  'light': $primary-300,
+  'main': $primary-500,
+  'dark': $primary-700,
+);
+$secondary: (
+  'light': $secondary-300,
+  'main': $secondary-500,
+  'dark': $secondary-700,
+);
+$accent: (
+  'light': $darkAccent-300,
+  'main': $darkAccent-500,
+  'dark': $darkAccent-700,
+);
+$darkShade: (
+  'light': $darkShade-300,
+  'main': $darkShade-500,
+  'dark': $darkShade-700,
+);
+$lightShade: (
+  'light': $lightShade-300,
+  'main': $lightShade-500,
+  'dark': $lightShade-700,
+);
+$text: (
+  'light': $darkShade-300,
+  'main': $darkShade-500,
+  'white': $lightShade-100,
+  'alternate': $lightShade-500,
+);
+$utility: (
+  'success': #21a032,
+  'info': #00708c,
+  'warning': #a05806,
+  'error': #8c2039,
+);
+
+// Color Usage
+//100	High-contrast text
+//200	Low-contrast text
+//300	Hovered solid backgrounds
+//400	Solid backgrounds
+//500	Hovered UI element border
+//600	UI element border and focus rings
+//700	Subtle borders and separators
+//800	Active / Selected / Hovered UI element background
+//900	Hovered UI element background
+
+// http://colormind.io/bootstrap/
+// https://colors.eva.design/

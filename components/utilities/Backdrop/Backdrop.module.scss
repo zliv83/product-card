@@ -1,0 +1,11 @@
+@import '../../../styles/_settings.scss';
+
+.backdrop {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: $box-shadow;
+  z-index: 100;
+  top: 0;
+  left: 0;
+}

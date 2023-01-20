@@ -1,0 +1,5 @@
+@import '../_settings';
+
+.page {
+  color: map-get($primary, 'main');
+}
