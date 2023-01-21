@@ -1,0 +1,162 @@
+@import '@/styles/__settings.scss';
+
+$aurometal: #6c7289;
+$aqua: #3d8168;
+$aqua-dark: #1a4032;
+
+.container {
+  display: flex;
+  @include center();
+  width: 100%;
+  height: 100vh;
+
+  .card {
+    display: flex;
+    flex-direction: column;
+    width: 343px;
+    height: 611px;
+    background: #ffffff;
+    border-radius: 10px;
+
+    .image {
+      width: 343px;
+      height: 240px;
+      top: 0;
+      left: 0;
+      border-radius: 10px 10px 0 0;
+      background-image: url('../../../../public/image-product-desktop.jpg');
+      background-position: center;
+      background-size: cover;
+    }
+
+    .content {
+      display: flex;
+      flex-direction: column;
+      padding: 24px;
+      width: 100%;
+
+      .category {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 15px;
+        letter-spacing: 5px;
+        color: $aurometal;
+        text-transform: uppercase;
+      }
+
+      .title {
+        margin-top: 12px;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 32px;
+        line-height: 32px;
+        color: #1c232b;
+      }
+
+      .description {
+        margin-top: 16px;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 23px;
+        color: $aurometal;
+      }
+
+      .price {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 19px;
+        margin-top: 24px;
+
+        .newPrice {
+          font-style: normal;
+          font-weight: 700;
+          font-size: 32px;
+          line-height: 32px;
+          color: $aqua;
+        }
+
+        .oldPrice {
+          font-style: normal;
+          font-weight: 500;
+          font-size: 13px;
+          line-height: 23px;
+          text-decoration-line: line-through;
+          color: $aurometal;
+        }
+      }
+
+      .button {
+        display: flex;
+        justify-content: center;
+        height: 48px;
+        padding: 0;
+        border: none;
+        align-items: center;
+        margin-top: 20px;
+        background-color: $aqua;
+        border-radius: 8px;
+        color: #ffffff;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 17px;
+
+        .content {
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          justify-content: center;
+          gap: 11.61px;
+        }
+      }
+    }
+
+    @include desktop() {
+      width: 600px;
+      height: 450px;
+      flex-direction: row;
+
+      .image {
+        width: 300px;
+        height: 450px;
+        border-radius: 10px 0 0 10px;
+      }
+
+      .content {
+        width: 300px;
+        height: 450px;
+        padding: 0 32px 0 32px;
+
+        .category {
+          margin-top: 32px;
+        }
+
+        .title {
+          margin-top: 20px;
+          width: 236px;
+        }
+
+        .description {
+          margin-top: 24px;
+          width: 237px;
+        }
+
+        .price {
+          margin-top: 29px;
+        }
+
+        .button {
+          margin-top: 30px;
+          cursor: pointer;
+
+          &:hover {
+            background-color: $aqua-dark;
+          }
+        }
+      }
+    }
+  }
+}
